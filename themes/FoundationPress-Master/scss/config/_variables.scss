@@ -1,0 +1,74 @@
+/**
+ * Custom variables
+ * ----------------------------------------------------------------------------
+ */
+// @mixin padding-margin($marginorpadleft, $marginorpadright) {
+//   $marginorpadleft: rem-calc(50);
+//   $marginorpadright: rem-calc(50);
+// }
+// 
+$sanserif: "ABeeZee", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$serif: "Crete Round", Georgia, serif;
+
+@mixin white-bg-black-border{
+  border: 2px solid black;
+  background-color: white;
+}
+ @mixin thick-border($width){
+ 	border-top-width: $width;
+ 	border-top-style: solid; 
+ 	border-top-color: $base-rule-color;
+ }
+ @mixin bold() {
+ 	font-weight: bold;
+}
+
+
+@mixin post-side-padding($value){
+	padding-left: rem-calc($value);
+	padding-right: rem-calc($value);
+	padding-top: rem-calc($value*1.1);
+	padding-bottom: rem-calc($value*1.1);		
+	
+} 
+
+@mixin outer-glow($spread, $color) {
+	-webkit-box-shadow: 0 0 $spread 0 $color;
+	box-shadow: 0 0 $spread 0 $color;
+}
+
+@mixin border-radius-setting($topleft, $topright, $bottomright, $bottomleft ) {
+ -webkit-border-top-left-radius: $topleft;
+-webkit-border-top-right-radius: $topright;
+-webkit-border-bottom-right-radius: $bottomright;
+-webkit-border-bottom-left-radius: $bottomleft;
+-moz-border-radius-topleft: $topleft;
+-moz-border-radius-topright: $topright;
+-moz-border-radius-bottomright: $bottomright;
+-moz-border-radius-bottomleft: $bottomleft;
+border-top-left-radius: $topleft;
+border-top-right-radius: $topright;
+border-bottom-right-radius: $bottomright;
+border-bottom-left-radius: $bottomleft;
+
+}
+// retina.sass
+// A helper mixin for applying high-resolution background images (http://www.retinajs.com)
+
+// Submitted by Nathan Crank
+// nathancrank.com
+@mixin at2x($path, $ext: "jpg", $w: auto, $h: auto) {
+  $at1x_path: "#{$path}.#{$ext}";
+  $at2x_path: "#{$path}@2x.#{$ext}";
+
+  background-image: url("#{$at1x_path}");
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5),
+         all and (-o-min-device-pixel-ratio: 3/2),
+         all and (min--moz-device-pixel-ratio: 1.5),
+         all and (min-device-pixel-ratio: 1.5) {
+           background-image: url("#{$at2x_path}");
+           background-size: $w $h;
+  }
+}
+

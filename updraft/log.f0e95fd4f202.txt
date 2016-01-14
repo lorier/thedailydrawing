@@ -1,0 +1,41 @@
+0000.002 () Opened log file at time: Thu, 13 Nov 2014 23:21:48 +0000 on http://localhost5:8888
+0000.003 () UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.9.30 WP: 4.0 PHP: 5.6.2 (Darwin Macintosh.local 13.4.0 Darwin Kernel Version 13.4.0: Sun Aug 17 19:50:11 PDT 2014; root:xnu-2422.115.4~1/RELEASE_X86_64 x86_64) MySQL: 5.5.38 Server: Apache/2.2.29 (Unix) mod_fastcgi/2.4.6 mod_wsgi/3.4 Python/2.7.8 PHP/5.6.2 mod_ssl/2.2.29 OpenSSL/0.9.8za DAV/2 mod_perl/2.0.8 Perl/v5.20.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 19.1M | 19.5M) multisite: N mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.003 () Free space on disk containing Updraft's temporary directory: 57036.1 Mb
+0000.003 () Restore job started. Entities to restore: uploads, db
+0000.081 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.081 () Entity: db
+0000.081 () restore_backup(backup_file=backup_2014-11-13-1504_The_Daily_Drawing___The_Art_of_98e5d77c0fa3-db.gz, type=db, info=a:0:{}, last_one=)
+0000.081 () Unpacking backup...
+0000.082 () Database successfully unpacked
+0000.083 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.083 () Using direct MySQL access; value of use_mysqli is: 1
+0000.196 () Max packet size: 32 Mb
+0000.197 () Backup created by: 1.9.30
+0000.198 () <strong>Backup of:</strong> http://thedailydrawing.net
+0000.198 () Content URL: http://thedailydrawing.net/wp-content
+0000.198 () Old table prefix: tddnet_
+0000.198 () Site information: multisite=0
+0000.249 () New table prefix: tddnet_
+0000.252 () Restoring table (MyISAM): tddnet_options
+0000.441 () Restoring table (MyISAM): tddnet_users
+0000.468 () Restoring table (MyISAM): tddnet_usermeta
+0000.496 () Restoring table (MyISAM): tddnet_commentmeta
+0000.542 () Restoring table (MyISAM): tddnet_comments
+0000.580 () Restoring table (MyISAM): tddnet_links
+0000.603 () Restoring table (MyISAM): tddnet_postmeta
+0001.022 () Restoring table (MyISAM): tddnet_posts
+0001.339 () Restoring table (MyISAM): tddnet_term_relationships
+0001.415 () Restoring table (MyISAM): tddnet_term_taxonomy
+0001.431 () Restoring table (MyISAM): tddnet_terms
+0001.487 () Finished: lines processed: 43 in 1.38 seconds
+0001.488 () Cleaning up rubbish...
+0001.493 () Entity: uploads
+0001.493 () restore_backup(backup_file=backup_2014-11-13-1504_The_Daily_Drawing___The_Art_of_98e5d77c0fa3-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:45:"/Applications/MAMP/htdocs5/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=1)
+0001.493 () Unpacking backup... (backup_2014-11-13-1504_The_Daily_Drawing___The_Art_of_98e5d77c0fa3-uploads.zip, 65.5 Mb)
+0003.680 () Moving old data: filesystem method / updraft_dir is potentially possible
+0003.680 () Moving old data: can potentially use wp_filesystem method / -old
+0003.680 () Moving old data out of the way...
+0004.384 () Moving unpacked backup into place...
+0005.355 () Cleaning up rubbish...
+0005.362 () Restore successful!
+0005.362 () Restore successful
